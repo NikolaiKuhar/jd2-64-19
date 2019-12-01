@@ -1,4 +1,6 @@
 target/
 .idea
 /jd2-64-19.iml
-/projectparent/projectparent.iml
+/project-parent/project-parent.iml
+/project-parent/Comics-common/Comics-common.iml
+/project-parent/Comics-web/Comics-web.iml
