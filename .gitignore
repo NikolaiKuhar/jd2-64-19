@@ -2,4 +2,4 @@ target/
 .idea
 /jd2-64-19.iml
 
-/project-parent/project-parent.iml
+*.iml
