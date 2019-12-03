@@ -10,7 +10,7 @@
   </parent>
 
 
-  <artifactId>Comics-common</artifactId>
+  <artifactId>comics-common</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
