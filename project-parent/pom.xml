@@ -10,8 +10,8 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>Comics-common</module>
-    <module>Comics-web</module>
+    <module>сomics-common</module>
+    <module>сomics-web</module>
   </modules>
 
 
