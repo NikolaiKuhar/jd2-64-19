@@ -32,5 +32,13 @@ public class ProductServiceImpl implements ProductService {
         product.setId((long) products.size() + 1);
         products.add(product);
     }
+    @Override
+    public void deleteProduct(Long id){
+        for (int i = 0; i < products.size(); i++) {
+          if  (products.get(i).getId() == id){
+              products.remove(i);
+          }
+        }
+    }
 }
 

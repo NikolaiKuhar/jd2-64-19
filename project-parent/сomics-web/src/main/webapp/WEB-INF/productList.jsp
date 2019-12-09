@@ -16,11 +16,17 @@
     </tr>
     <c:forEach items="${productList}" var="product">
         <tr>
+
             <td><c:out value="${product.id}"/></td>
             <td><c:out value="${product.name}"/></td>
             <td><c:out value="${product.price}"/></td>
             <td><c:out value="${product.count}"/></td>
             <td><c:out value="${product.rating}"/></td>
+            <form method="post" action="${pageContext.request.contextPath}/productDeleteServlet">
+                <input name="id" hidden value='<c:out value="${product.id}"/>'/>
+
+                <input type="submit" display="inline">
+            </form>
 
         </tr>
     </c:forEach>
