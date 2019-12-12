@@ -4,6 +4,7 @@ import by.it.academy.comics.model.Product;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class ProductServiceImpl implements ProductService {
 
@@ -11,6 +12,7 @@ public class ProductServiceImpl implements ProductService {
 
     private final List<Product> products;
 
+    private AtomicLong id = new AtomicLong();
     private ProductServiceImpl() {
         products = new ArrayList<>();
         products.add(new Product(1L, "Product name 1", 10.0,0,8.0));
@@ -22,14 +24,16 @@ public class ProductServiceImpl implements ProductService {
         return INSTANCE;
     }
 
+
+
     @Override
     public List<Product> getAllProducts() {
-        return products;
+        return new ArrayList<>(products);
     }
 
     @Override
     public void addNewProduct(Product product) {
-        product.setId((long) products.size() + 1);
+        product.setId(id.incrementAndGet());
         products.add(product);
     }
     @Override
@@ -37,6 +41,7 @@ public class ProductServiceImpl implements ProductService {
         for (int i = 0; i < products.size(); i++) {
           if  (products.get(i).getId().equals(id)){
               products.remove(i);
+              break;
           }
         }
     }
@@ -49,6 +54,7 @@ public class ProductServiceImpl implements ProductService {
                 oldProduct.setPrice(newProduct.getPrice());
                 oldProduct.setCount(newProduct.getCount());
                 oldProduct.setRating(newProduct.getRating());
+                break;
             }
         }
 
