@@ -11,6 +11,7 @@ import java.io.IOException;
 @WebFilter(urlPatterns = "/*")
 public class EncodingFilter extends HttpFilter {
 
+
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         req.setCharacterEncoding("UTF-8");

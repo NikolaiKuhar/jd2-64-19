@@ -7,6 +7,8 @@
 <html lang="${param.lang}">
 <head>
     <meta charset="UTF-8">
+    <fmt:setLocale scope="session" value="${param.lang}"/>
+    <fmt:setBundle basename="messages"/>
     <title><fmt:message key="home.page.title"/></title>
 </head>
 <body>

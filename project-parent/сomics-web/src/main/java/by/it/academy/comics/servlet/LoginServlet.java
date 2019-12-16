@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
             errorMsg = "UserName and password should not be empty; ";
         } else {
             Optional<User> user = userService.findUser(userName, password);
-            if (user.equals("")) {
+            if (user.isPresent()== false) {
                 hasError = true;
                 errorMsg = "Invalid user name or password";
             } else {
