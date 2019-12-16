@@ -1,11 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Create Product</title>
-</head>
-<body>
+<%@ taglib prefix="a" uri="/WEB-INF/taglib/auth.tld" %>
 
+
+<%@include file="include/header.jsp" %>
 <form method="post" action="${pageContext.request.contextPath}/productCreate">
     <label> Name: <input type="text" name="name"/> </label>
     <br>
@@ -18,5 +17,4 @@
 
     <input type="submit">
 </form>
-</body>
-</html>
+<%@include file="include/footer.jsp" %>

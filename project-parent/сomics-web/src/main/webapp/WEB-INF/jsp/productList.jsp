@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<<%@ page language="java" contentType="text/html; charset=UTF-8"
+          pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-<head>
-    <title>Product List</title>
-</head>
-<body>
+<%@ taglib prefix="a" uri="/WEB-INF/taglib/auth.tld" %>
+
+<jsp:include page="include/header.jsp"/>
+<%@include file="include/menu.jsp" %>
 
 <table>
     <tr>
@@ -27,5 +27,4 @@
         </tr>
     </c:forEach>
 </table>
-</body>
-</html>
+<%@include file="include/footer.jsp" %>

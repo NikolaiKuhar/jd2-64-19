@@ -1,11 +1,16 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
 <body>
-<jsp:include page="WEB-INF/Include/Header.jsp"/>
-<%@ include file="WEB-INF/Include/Menu.jsp"%>
-<h2>Main Page!</h2>
-<p>Page Body</p>
 
-<jsp:include page="/WEB-INF/Include/Footer.jsp"/>
+
+<h3>Index Page</h3>
+
+
 </body>
 </html>
