@@ -3,8 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="a" uri="/WEB-INF/taglib/auth.tld" %>
 
-<jsp:include page="include/header.jsp"/>
-<%@include file="include/menu.jsp" %>
+<jsp:include page="../include/header.jsp"/>
+<%@include file="../include/menu.jsp" %>
 
 <table>
     <tr>
@@ -27,4 +27,4 @@
         </tr>
     </c:forEach>
 </table>
-<%@include file="include/footer.jsp" %>
+<%@include file="../include/footer.jsp" %>

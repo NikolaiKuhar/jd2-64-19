@@ -10,8 +10,8 @@
     <title>Login</title>
 </head>
 <body>
-<%@include file="include/header.jsp"%>
-<%@include file="include/menu.jsp" %>
+<%@include file="../include/header.jsp"%>
+<%@include file="../include/menu.jsp" %>
 
 <h3>Login Page</h3>
 <p style="color: red;">${errorString}</p>
@@ -43,6 +43,6 @@
 <p style="color:blue;">Admin User: arthas password: arthas123</p>
 <p style="color:blue;">Simple User: thrall password: thrall123</p>
 
-<jsp:include page="include/footer.jsp"/>
+<jsp:include page="../include/footer.jsp"/>
 </body>
 </html>

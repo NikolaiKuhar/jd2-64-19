@@ -11,8 +11,8 @@
 </head>
 <body>
 
-<%@include file="include/header.jsp" %>
-<%@include file="include/menu.jsp" %>
+<%@include file="../include/header.jsp" %>
+<%@include file="../include/menu.jsp" %>
 
 <h3><fmt:message key="home.page.header"/></h3>
 
@@ -29,7 +29,7 @@
     </li>
 </ul>
 
-<jsp:include page="include/footer.jsp"/>
+<jsp:include page="../include/footer.jsp"/>
 
 </body>
 </html>

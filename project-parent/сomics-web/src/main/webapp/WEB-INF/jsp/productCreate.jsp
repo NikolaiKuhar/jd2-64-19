@@ -4,7 +4,7 @@
 <%@ taglib prefix="a" uri="/WEB-INF/taglib/auth.tld" %>
 
 
-<%@include file="include/header.jsp" %>
+<%@include file="../include/header.jsp" %>
 <form method="post" action="${pageContext.request.contextPath}/productCreate">
     <label> Name: <input type="text" name="name"/> </label>
     <br>
@@ -17,4 +17,4 @@
 
     <input type="submit">
 </form>
-<%@include file="include/footer.jsp" %>
+<%@include file="../include/footer.jsp" %>
