@@ -1,8 +1,8 @@
-package by.it.academy.comics.model;
+package by.it.academy.comics.web.model;
 
 import java.util.Objects;
 
-public class Product {
+public class Comics {
 
     private Long id;
     private String name;
@@ -10,10 +10,10 @@ public class Product {
     private int count;
     private Double rating;
 
-    public Product() {
+    public Comics() {
     }
 
-    public Product(Long id, String name, Double price, int count, Double rating ) {
+    public Comics(Long id, String name, Double price, int count, Double rating ) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -65,12 +65,12 @@ public class Product {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return count == product.count &&
-                id.equals(product.id) &&
-                name.equals(product.name) &&
-                price.equals(product.price) &&
-                rating.equals(product.rating);
+        Comics comics = (Comics) o;
+        return count == comics.count &&
+                id.equals(comics.id) &&
+                name.equals(comics.name) &&
+                price.equals(comics.price) &&
+                rating.equals(comics.rating);
     }
 
     @Override
@@ -80,7 +80,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Comics{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +

@@ -1,6 +1,6 @@
-package by.it.academy.comics.tagscustom;
+package by.it.academy.comics.web.tagscustom;
 
-import by.it.academy.comics.model.User;
+import by.it.academy.comics.web.model.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

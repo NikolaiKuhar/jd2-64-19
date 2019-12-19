@@ -1,4 +1,4 @@
-package by.it.academy.comics.filter;
+package by.it.academy.comics.web.filter;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

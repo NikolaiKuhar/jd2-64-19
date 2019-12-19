@@ -1,6 +1,6 @@
-package by.it.academy.comics.service;
+package by.it.academy.comics.web.service;
 
-import by.it.academy.comics.model.User;
+import by.it.academy.comics.web.model.User;
 
 import java.util.Optional;
 

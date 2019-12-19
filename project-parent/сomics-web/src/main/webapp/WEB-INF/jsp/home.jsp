@@ -22,8 +22,9 @@
 
 <ul>
     <li>Login</li>
-    <li>Product List</li>
-    <li>Product Create</li>
+    <li>Comicbook List</li>
+    <li>Comicbook Create</li>
+    <li>My Account info</li>
     <li>
         Localization:
         <a href="?lang=en">en</a> |

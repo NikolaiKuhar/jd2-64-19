@@ -1,4 +1,4 @@
-package by.it.academy.comics.servlet;
+package by.it.academy.comics.web.servlet;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

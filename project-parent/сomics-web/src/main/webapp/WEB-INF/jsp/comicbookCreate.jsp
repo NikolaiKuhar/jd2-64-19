@@ -5,7 +5,7 @@
 
 
 <%@include file="../include/header.jsp" %>
-<form method="post" action="${pageContext.request.contextPath}/productCreate">
+<form method="post" action="${pageContext.request.contextPath}/comicbookCreate">
     <label> Name: <input type="text" name="name"/> </label>
     <br>
     <label> Price: <input type="number" name="price"/> </label>

@@ -1,4 +1,4 @@
-package by.it.academy.comics.listener;
+package by.it.academy.comics.web.listener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

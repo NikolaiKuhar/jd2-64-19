@@ -1,4 +1,4 @@
-package by.it.academy.comics.servlet;
+package by.it.academy.comics.web.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

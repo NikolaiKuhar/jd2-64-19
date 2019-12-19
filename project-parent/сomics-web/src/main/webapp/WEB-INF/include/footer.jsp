@@ -3,6 +3,6 @@
 
 <div style="background: #E0E0E0; text-align: center; padding: 5px; margin-top: 10px;">
 
-    @Copyright Comics 2019
+    @Copyright Comic book store 2019
 
 </div>

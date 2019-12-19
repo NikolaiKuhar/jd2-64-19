@@ -1,6 +1,6 @@
-package by.it.academy.comics.filter;
+package by.it.academy.comics.web.filter;
 
-import by.it.academy.comics.model.User;
+import by.it.academy.comics.web.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
