@@ -1,4 +1,4 @@
-package by.it.academy.comics.web.model;
+package by.it.academy.comics.model;
 
 import java.util.Objects;
 

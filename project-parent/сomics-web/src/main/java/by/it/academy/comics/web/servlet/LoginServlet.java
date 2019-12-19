@@ -1,8 +1,8 @@
 package by.it.academy.comics.web.servlet;
 
-import by.it.academy.comics.web.model.User;
-import by.it.academy.comics.web.service.UserService;
-import by.it.academy.comics.web.service.UserServiceImpl;
+import by.it.academy.comics.model.User;
+import by.it.academy.comics.service.UserService;
+import by.it.academy.comics.service.UserServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

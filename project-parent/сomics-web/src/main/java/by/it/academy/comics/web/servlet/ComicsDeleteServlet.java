@@ -1,7 +1,7 @@
 package by.it.academy.comics.web.servlet;
 
-import by.it.academy.comics.web.service.ComicsService;
-import by.it.academy.comics.web.service.ComicsServiceImpl;
+import by.it.academy.comics.service.ComicsService;
+import by.it.academy.comics.service.ComicsServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
