@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
             hasError = true;
             errorMsg = "UserName and password should not be empty; ";
         } else {
-            Optional<User> user = userService.findUser(userName, password);
+            Optional<User> user = userService.findUser(userName,password);
             if (user.isPresent()== false) {
                 hasError = true;
                 errorMsg = "Invalid user name or password";
@@ -49,7 +49,7 @@ public class LoginServlet extends HttpServlet {
 
         if (hasError) {
             req.setAttribute("errorString", errorMsg);
-            req.setAttribute("user", new User(userName, password));
+            req.setAttribute("userName", userName);
             req.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(req, resp);
         } else {
             resp.sendRedirect(req.getContextPath() + "/home");
