@@ -1,6 +1,8 @@
-package by.it.academy.comics.service;
+package by.it.academy.comics.web.servlet;
 
-import by.it.academy.comics.model.Product;
+import by.it.academy.comics.model.Comics;
+import by.it.academy.comics.service.ComicsService;
+import by.it.academy.comics.service.ComicsServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,9 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-@WebServlet(urlPatterns = "/productUpdate")
-public class ProductUpdate extends HttpServlet {
-    private ProductService productService = ProductServiceImpl.getService();
+@WebServlet(urlPatterns = "/comicsbookUpdate")
+public class ComicsUpdate extends HttpServlet {
+    private ComicsService comicsService = ComicsServiceImpl.getService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -19,9 +21,9 @@ public class ProductUpdate extends HttpServlet {
         String count = req.getParameter("count");
         String rating = req.getParameter("rating");
         String id = req.getParameter("id");
-        Product product = new Product(Long.valueOf(id), name, Double.valueOf(price),Integer.valueOf(count),Double.valueOf(rating));
-        productService.updateProduct(product);
-        resp.sendRedirect(req.getContextPath() + "/productList");
+        Comics comics = new Comics(Long.valueOf(id), name, Double.valueOf(price),Integer.valueOf(count),Double.valueOf(rating));
+        comicsService.updateComics(comics);
+        resp.sendRedirect(req.getContextPath() + "/comicbookList");
     }
 
 

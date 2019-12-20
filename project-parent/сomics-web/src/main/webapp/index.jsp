@@ -1,10 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
 <body>
-<h2>Hello World!</h2>
-<h2>Main Page!</h2>
-<ul>
-    <li><a href="./productList">Product List</a></li>
-    <li><a href="./productCreate">Create new Product</a></li>
-</ul>
+
+
+<h3>Index Page</h3>
+
+
 </body>
 </html>
