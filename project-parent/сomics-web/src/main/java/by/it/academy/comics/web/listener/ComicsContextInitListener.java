@@ -8,7 +8,6 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 import javax.sql.DataSource;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 @WebListener()

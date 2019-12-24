@@ -1,6 +1,7 @@
-package by.it.academy.comics.service;
+package by.it.academy.comics.service.impl;
 
 import by.it.academy.comics.model.User;
+import by.it.academy.comics.service.UserService;
 
 import java.util.Map;
 import java.util.Optional;
