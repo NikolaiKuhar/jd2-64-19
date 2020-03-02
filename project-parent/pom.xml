@@ -14,6 +14,7 @@
   <modules>
     <module>сomics-common</module>
     <module>сomics-web</module>
+    <module>common-hibernate</module>
   </modules>
 
 
