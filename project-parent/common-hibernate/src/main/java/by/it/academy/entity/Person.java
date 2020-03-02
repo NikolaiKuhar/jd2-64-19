@@ -1,27 +1,21 @@
 package by.it.academy.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
+@Table(name = "Person_Table")
 public class Person {
-
     @Id
-    @GeneratedValue
     private Long id;
-    @Column
-    private String name;
-    @Column
-    private String surname;
-    @Column
+    @Column(length = 3, nullable = true)
     private Integer age;
+    @Column(name = "User_NAME" , nullable = false)
+    private String name;
+    @Column(name = "User_SURNAME" , nullable = false)
+    private String surname;
 }
